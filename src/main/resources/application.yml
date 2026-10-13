@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:raceshop;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8088
+app:
+  jwt:
+    secret: training-only-secret-change-me-please-32-bytes-minimum
+    expiration-minutes: 60
